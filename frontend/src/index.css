@@ -1,0 +1,22 @@
+/* ============================================================
+   index.css — Tailwind CSS v4 + DaisyUI v5
+   
+   Tailwind v4 ไม่ต้องมี tailwind.config.js แล้ว
+   ทุกอย่าง config ผ่าน CSS @import / @plugin / @theme ที่นี่
+   ============================================================ */
+
+@import "tailwindcss";
+
+/* DaisyUI v5 — ใช้ @plugin directive */
+@plugin "daisyui";
+
+/* ============================================================
+   Custom Utilities (optional)
+   สามารถเพิ่ม custom class ด้วย @utility ได้
+   ============================================================ */
+
+/* Smooth scrollbar สำหรับ message list */
+@utility custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: oklch(var(--b3)) transparent;
+}
